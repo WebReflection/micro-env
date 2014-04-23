@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Micro-env : a tweet sized enriched environment" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Micro-env</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/WebReflection/micro-env">View on GitHub</a>
+
+          <h1 id="project_title">Micro-env</h1>
+          <h2 id="project_tagline">a tweet sized enriched environment</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/WebReflection/micro-env/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/WebReflection/micro-env/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="micro-env" class="anchor" href="#micro-env"><span class="octicon octicon-link"></span></a>micro-env</h1>
+
+<p>a tweet sized enriched environment</p>
+
+<p><a href="https://travis-ci.org/WebReflection/micro-env"><img src="https://travis-ci.org/WebReflection/micro-env.svg" alt="Build Status"></a></p>
+
+<h4>
+<a name="do-more-with-less" class="anchor" href="#do-more-with-less"><span class="octicon octicon-link"></span></a>do more, with less</h4>
+
+<p>this is an experiment based on tiny snippets (so far all of them less than plain 140 bytes) which aim is to simplify and enrich the JS env.</p>
+
+<p>The approach is not as unobtrusive and well tested as <a href="https://github.com/WebReflection/eddy#event-driven-js">eddy.js</a> is but surely easier to maintain and experiment with.</p>
+
+<p>Snippets either enrich the env polluting global prototype or bring new functionalities.</p>
+
+<p>All snippets are <a href="src/">grouped in this folder</a> with examples and descriptions.</p>
+
+<h4>
+<a name="which-micro" class="anchor" href="#which-micro"><span class="octicon octicon-link"></span></a>which micro</h4>
+
+<p>Snippets are built to provide portable <em>env</em> files with all dependencies already resolved.
+Here the list of various combinations:</p>
+
+<ul>
+<li>
+<a href="build/all.js">all.js</a> to include all snippets, mainly suitable for browsers</li>
+<li>
+<a href="build/env.js">env.js</a> to include everything but DOM related snipepts. This is the version built for node and others</li>
+<li>
+<a href="build/oop.js">oop.js</a> to include only <code>Function</code> and <code>Object</code> related snippets</li>
+<li>
+<a href="build/dom.js">dom.js</a> to include only <code>DOM</code> related shortcuts, browsers only</li>
+<li>
+<a href="build/base.js">base.js</a> to include only plain <code>Object</code> related snippets</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Micro-env maintained by <a href="https://github.com/WebReflection">WebReflection</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
