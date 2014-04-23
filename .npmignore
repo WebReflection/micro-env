@@ -1,0 +1,10 @@
+src/*
+test/*
+template/*
+node_modules/*
+build/Array/*
+build/DOM/*
+build/Function/*
+build/Object/*
+Makefile
+index.html
