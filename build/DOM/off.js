@@ -1,0 +1,1 @@
+HTMLElement.prototype.off=function(){return this.removeEventListener.apply(this,arguments),this};

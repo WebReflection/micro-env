@@ -1,0 +1,1 @@
+(function(e,t,n){n=e.document,n.on=e.on=t.on,n.off=e.off=t.off,n.emit=e.emit=t.emit})(window,HTMLElement.prototype);

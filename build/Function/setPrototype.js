@@ -1,0 +1,1 @@
+Function.prototype.setPrototype=function(e){var t=this.prototype,n;for(n in e)e.hasOwnProperty(n)&&(t[n]=e[n]);return this};

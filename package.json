@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "name": "micro-env",
+  "description": "a tweet size enriched environment",
+  "keywords": [
+  ],
+  "author": {
+    "name": "Andrea Giammarchi",
+    "web": "http://webreflection.blogspot.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/WebReflection/micro-env.git"
+  },
+  "main": "./build/env.js",
+  "scripts": {
+    "test": "node test/.test.js"
+  }
+}

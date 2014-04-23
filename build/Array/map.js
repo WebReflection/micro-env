@@ -1,0 +1,1 @@
+[].map||(Array.prototype.map=function(e,t){for(var n=[],r=0;r<this.length;r++)n[r]=e.call(t,this[r],r,this);return n});
