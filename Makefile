@@ -1,5 +1,7 @@
 .PHONY: build each test
 
+REPO = micro-env
+
 build:
 	make each
 	make test
@@ -35,3 +37,22 @@ each:
 
 test:
 	npm test
+
+pages:
+	git pull --rebase
+	mkdir -p ~/tmp
+	mkdir -p ~/tmp/$(REPO)
+	cp -rf src ~/tmp/$(REPO)
+	cp -rf build ~/tmp/$(REPO)
+	cp -rf test ~/tmp/$(REPO)
+	cp index.html ~/tmp/$(REPO)
+	git checkout gh-pages
+	mkdir -p test
+	rm -rf test
+	cp -rf ~/tmp/$(REPO) test
+	git add test
+	git add test/.
+	git commit -m 'automatic test generator'
+	git push
+	git checkout master
+	rm -r ~/tmp/$(REPO)
