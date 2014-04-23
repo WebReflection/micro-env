@@ -1,0 +1,1 @@
+HTMLElement.prototype.once=function(e,t,n){return this.on(e,function r(){this.off(e,r,!!n),t.apply(this,arguments)},!!n),this};

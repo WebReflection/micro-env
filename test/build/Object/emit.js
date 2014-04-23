@@ -1,0 +1,1 @@
+Object.prototype.emit=function(e){for(var t=this._h,n=t?t["_"+e]:[],r=n.slice.call(arguments,1),i=0,s;i<n.length;s.apply(this,r))s=n[i++]};

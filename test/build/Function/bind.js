@@ -1,0 +1,1 @@
+Function.bind||(Function.prototype.bind=function(e){var t=this;return function(){return t.apply(e,arguments)}});

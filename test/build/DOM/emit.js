@@ -1,0 +1,1 @@
+HTMLElement.prototype.emit=function(e,t){var n=document.createEvent("Event");n.initEvent(e,1,1),n.detail=t,this.dispatchEvent(n)};

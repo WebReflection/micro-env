@@ -1,0 +1,1 @@
+[].some||(Array.prototype.some=function(e,t){for(var n=0;n<this.length;n++)if(e.call(t,this[n],n,this))break;return n<this.length});

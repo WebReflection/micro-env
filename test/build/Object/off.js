@@ -1,0 +1,1 @@
+Object.prototype.off=function(e,t){var n=this._h,r=n&&n["_"+e],i=r&&r.indexOf(t);return~i&&r.splice(i,1),this};

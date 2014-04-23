@@ -1,0 +1,1 @@
+HTMLElement.prototype.on=function(){return this.addEventListener.apply(this,arguments),this};

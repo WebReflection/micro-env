@@ -1,0 +1,1 @@
+(function(e){function t(){t[e]=null}Function[e].inherit=function(n){return t[e]=n[e],(this[e]=new t).constructor=this}})("prototype");
