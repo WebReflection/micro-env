@@ -1,7 +1,7 @@
 /**
  * @type    Basic Polyfill
  * @use     same as ES5 Array.prototype.indexOf
- * @caveats do not pass strings as second optional argument
+ * @caveats does not accept strings as second optional argument
  */
 [].indexOf || (Array.prototype.indexOf = function (v, f) {
   for (var
