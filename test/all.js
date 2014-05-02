@@ -42,6 +42,8 @@ wru.test([
     test: function () {
       wru.assert('works as expected', [1,2,3].indexOf(2) === 1);
       wru.assert('returns -1 too', [1,2,3].indexOf(4) === -1);
+      wru.assert('accepts extra index', [1,2,3,2].indexOf(2,2) === 3);
+      wru.assert('accepts negative index', [1,2,3,2].indexOf(2,-3) === 1);
     }
   }, {
     name: "Array#map",
@@ -103,6 +105,11 @@ wru.test([
       });
       o.emit('test', 1, 'b');
       wru.assert('works as expected', [].slice.call(o.arguments).join(',') === '1,b' && o.self === o);
+    }
+  }, {
+    name: 'Object.keys',
+    test: function () {
+      wru.assert(Object.keys({a:1, b:2}).sort().join(',') === 'a,b');
     }
   }, {
     name: 'Object#off',
