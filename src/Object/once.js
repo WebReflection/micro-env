@@ -17,8 +17,9 @@
 
  */
 Object.prototype.once = function(t, h){
-  return this.on(t, function f() {
+  var f = function(){
     this.off(t, f);
     h.apply(this, arguments);
-  });
+  };
+  return this.on(t, f);
 };

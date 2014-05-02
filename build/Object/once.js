@@ -1,1 +1,1 @@
-Object.prototype.once=function(e,t){return this.on(e,function n(){this.off(e,n),t.apply(this,arguments)})};
+Object.prototype.once=function(e,t){var n=function(){this.off(e,n),t.apply(this,arguments)};return this.on(e,n)};

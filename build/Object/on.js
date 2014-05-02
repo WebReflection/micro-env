@@ -1,1 +1,1 @@
-Object.prototype.on=function(e,t){var n=this._h||(this._h={}),r=n["_"+e]||(n["_"+e]=[]);return~r.indexOf(t)||r.push(t),this};
+Object.prototype.on=function(e,t){var n="_@",r=this[n]||(this[n]={}),i=r[n+e]||(r[n+e]=[]);return~i.indexOf(t)||i.push(t),this};

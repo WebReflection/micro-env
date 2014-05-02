@@ -16,8 +16,9 @@
 
  */
 Object.prototype.on = function(t, h){
-  var H = this._h || (this._h = {}),
-      l = H['_' + t] || (H['_' + t] = []);
+  var _ = '_@',
+      H = this[_] || (this[_] = {}),
+      l = H[_ + t] || (H[_ + t] = []);
   if (!~l.indexOf(h)) l.push(h);
   return this;
 };
