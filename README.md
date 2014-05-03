@@ -9,6 +9,8 @@ a tweet sized enriched environment
 #### do more, with less
 this is an experiment based on tiny snippets (so far all of them less than plain 140 bytes) which aim is to simplify and enrich the JS env.
 
+Please [read the related post to know more](http://webreflection.blogspot.com/2014/05/micro-env-tweet-sized-enriched.html).
+
 The approach is not as unobtrusive and well tested as [eddy.js](https://github.com/WebReflection/eddy#event-driven-js) is but surely easier to maintain and experiment with.
 
 Snippets either enrich the env polluting global prototype or bring new functionalities.
