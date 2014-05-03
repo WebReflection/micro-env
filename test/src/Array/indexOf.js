@@ -1,11 +1,13 @@
 /**
- * @type    Partial Shim
- * @use     to know if an Array contains already an element
- *          to retrieve the index of a generic item in an Array
- * @caveats the index, if any, is always the last one (lastIndexOf)
- *          no extra arguments (not part of the use case)
+ * @type    Basic Polyfill
+ * @use     same as ES5 Array.prototype.indexOf
+ * @caveats does not accept strings as second optional argument
  */
-[].indexOf || (Array.prototype.indexOf = function (v) {
-  for (var i = this.length; i-- && this[i] !== v;){}
-  return i;
+[].indexOf || (Array.prototype.indexOf = function (v, f) {
+  for (var
+    l = this.length,
+    i = f < 0 ? (l + f < 0 ? 0 : l + f) : f || 0;
+    i < l && this[i++] !== v;
+  ){}
+  return l <= i ? -1 : i - 1;
 });

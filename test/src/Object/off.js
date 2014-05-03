@@ -19,8 +19,9 @@
 
  */
 Object.prototype.off = function(t, h){
-  var H = this._h,
-      l = H && H['_' + t],
+  var _ = '_@',
+      H = this[_],
+      l = H && H[_ + t],
       i = l && l.indexOf(h);
   if (~i) l.splice(i, 1);
   return this;

@@ -15,12 +15,12 @@
  */
 Object.prototype.emit = function(t) {
   for (var
-    H = this._h,
-    l = H ? H['_' + t] : [],
+    _ = '_@',
+    H = this[_],
+    l = H ? H[_ + t] : [],
     a = l.slice.call(arguments, 1),
-    s = 0,
-    c;
+    s = 0;
     s < l.length;
-    c.apply(this, a)
-  ) c = l[s++];
+    l[s++].apply(this, a)
+  ){}
 };

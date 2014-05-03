@@ -1,0 +1,1 @@
+[].filter||(Array.prototype.filter=function(e,t){for(var n=[],r=0,i=0,s=this,o;i<s.length;i++)e.call(t,o=s[i],i,s)&&(n[r++]=o);return n});

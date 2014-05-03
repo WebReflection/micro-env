@@ -17,9 +17,9 @@
 
  */
 HTMLElement.prototype.once = function (t, h, c) {
-  this.on(t, function f() {
+  var f = function(){
     this.off(t, f, !!c);
     h.apply(this, arguments);
-  }, !!c);
-  return this;
+  };
+  return this.on(t, f, !!c);
 };
